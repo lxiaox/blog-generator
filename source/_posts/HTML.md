@@ -207,7 +207,7 @@ tags: html标签
         </tr>
         <tr>
             <td>&lt;dfn></td>
-            <td>一个术语包含在其最近祖先内容中的定义 。</td>
+            <td>代表一个术语包含在其最近祖先内容中的定义 。</td>
         </tr>
         <tr>
             <td>&lt;abbr></td>
