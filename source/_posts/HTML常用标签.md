@@ -1,9 +1,14 @@
-# HTML常用标签及简单介绍
+---
+title: HTML常用标签及简单介绍
+date: 2018-05-09 10:57:35
+tags: html常用标签
+---
+
 本文介绍内容主要分为HTML结构、标题标签、段落标签、图形标签、一些常用标签、制表、表单、框架标签、超链接标签、字符控制、列表控制以及多媒体等。
 
 
 ## HTML结构
-<table style="border-collapse:collapse">
+<table>
 <tr><td><th>标签<th>描述
 <tr><td><td>DOCTYPE<td>指定文件类型，如html5中:<br>&lt;!DOCTYPE html>
 <tr><td><td>html<td>文档的根元素
@@ -17,7 +22,7 @@
 </table>
 
 ## 标题标签&lt;h1>~&lt;h6>
-<table style="border-collapse:collapse">
+<table>
 <tr><th>标签<th>示例
 <tr><td>h1<td><h1>一级标题</h1>
 <tr><td>h1<td><h2>二级标题</h2>
@@ -33,7 +38,7 @@
 </table>
 
 ## 段落标签&lt;p>
-<table style="border-collapse:collapse">
+<table>
 <tr><th>标签<th>描述
 <tr><td>p<td>用于在网页中显示一个段落
 <tr><td colspan=2>align属性对齐方式与&lt;h1>方式一致
@@ -42,11 +47,11 @@
 ## 图形标签&lt;img>
 img是一个空元素，不需要结束元素,一般格式如下：
 
-	&lt;img src="" width="" height="" alt="">
+	<img src="" width="" height="" alt="">
 1. src属性为img元素的必选属性，用于指定图形文件的路径，由URL确定，可以是本地资源，也可以是远程资源。
 2. width和height属性分别表示图形显示在浏览器中的宽度和高度，为可选属性。
 3. alt表示图片不能正常显示时的替换文字。
-4. align属性<table style="border-collapse:collapse">
+4. align属性<table>
 <tr><th>align属性值<th>对齐方式
 <tr><td>left<td>把图像和左边界对齐
 <tr><td>right<td>把图像和右边界对齐
@@ -62,7 +67,7 @@ img是一个空元素，不需要结束元素,一般格式如下：
 </table>
 
 ## 一些常用标签
-<table style="border-collapse:collapse">
+<table>
 <tr><th>标签<th>描述
 <tr><td>&lt;!--注释--><td>注释多行内容。<br>快捷方式：选中想注释掉的文本内容，按键盘Ctrl+/。
 <tr><td>hr<td>在网页中画一条横线
@@ -73,7 +78,7 @@ img是一个空元素，不需要结束元素,一般格式如下：
 </table>
 
 ## 制表标签
-<table style="border-collapse:collapse">
+<table>
 <tr><th>标签<th>描述
 <tr><td>table<td>建立表格的主要元素。含border，bgcolor，bordercolor等属性。
 <tr><td rowspan=2>caption<td>用于把一行文本置于表格上方或下方
@@ -89,7 +94,7 @@ img是一个空元素，不需要结束元素,一般格式如下：
 </table>
 
 ## 表单元素
-<table style="border-collapse:collapse">
+<table>
 <tr><td><th>标签<th>描述
 <tr><td><td>form<td>建立表单的主要元素。含method属性（与服务器交换信息时使用的方式），一般选择post或<s>get</s>
 <tr><td><td>input<td>定义一个用于用户输入的表单控件。由type属性规定其类型；由name属性定义控件名称，按照name/value发送给服务器，没有写那么属性的控件不会发送。
@@ -110,7 +115,7 @@ img是一个空元素，不需要结束元素,一般格式如下：
 </table>
 
 ## 框架标签
-<table style="border-collapse:collapse">
+<table>
 <tr><th>标签<th>描述
 <tr><td rowspan=3>frameset<td>定义框架结构，放在body元素外。HTML5不支持。
 <tr><td>用法：<br>&lt;frameset rows="#,...,#"><br>&lt;frameset>
@@ -123,7 +128,7 @@ img是一个空元素，不需要结束元素,一般格式如下：
 </table>
 
 ## 超链接
-<table style="border-collapse:collapse">
+<table>
 <tr><th>标签<th>描述
 <tr><td>a<td>用法：&lt;a href="" target="">链接对象&lt;a>
 <tr><td rowspan=5>href属性值<td>href属性用于指定超链接的链接对象，可以为相对地址或绝对地址。
@@ -140,7 +145,7 @@ img是一个空元素，不需要结束元素,一般格式如下：
 </table>
 
 ## 字符控制
-<table style="border-collapse:collapse">
+<table>
 <tr><th>标签<th>描述
 <tr><td rowspan=2>font<td>控制文字的字体、字号、颜色
 <tr><td>用法：&lt;font face="" size="" color="">&lt;font>
@@ -156,7 +161,7 @@ img是一个空元素，不需要结束元素,一般格式如下：
 </table>
 
 ## 列表控制
-<table style="border-collapse:collapse">
+<table>
 <tr><th>标签<th>描述
 <tr><td>dl<td>定义列表
 <tr><td>dt<td>由dd元素定义的对象
@@ -177,7 +182,7 @@ img是一个空元素，不需要结束元素,一般格式如下：
 </table>
 
 ## 多媒体
-<table style="border-collapse:collapse">
+<table>
 <tr><th>技术<th>实现方法
 <tr><td>声音与视频<td>使用a标签
 <tr><td>背景音乐<td>在head标签中写入：<br>&lt;bgsound src="" loop=""><br>（loop为循环次数）
