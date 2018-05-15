@@ -13,7 +13,7 @@ tags: html常用标签
 <tr><td><td>DOCTYPE<td>指定文件类型，如html5中:<br>&lt;!DOCTYPE html>
 <tr><td><td>html<td>文档的根元素
 <tr><td><td>head<td>网页中顶级元素，一般包含浏览器环境设置部分
-<tr><th rowspan=5 width=4>head嵌套<td>title<td>
+<tr><th rowspan=5 width=4>head嵌套<td>title<td>定义网页的标题
 <tr><td>style<td>设置html元素的样式
 <tr><td>script<td>定义网页使用哪种脚本语言
 <tr><td>meta<td>定义网页元数据，如文档关键字、描述和作者信息
@@ -188,4 +188,5 @@ img是一个空元素，不需要结束元素,一般格式如下：
 <tr><td>背景音乐<td>在head标签中写入：<br>&lt;bgsound src="" loop=""><br>（loop为循环次数）
 <tr><td>动态文件<td>使用img元素的dynsrc（引入各种格式的多媒体）、loop、start（值为mouseover等）等IE属性。
 <tr><td>动画和视频的插入<td>使用embed元素，用法：<br>&lt;embed src="" width="" height="">
+<tr><td>文本滚动<td>使用&lt;marquee>元素，内含width、height、bgcolor、border、behavior（=slide、sroll、alternate等）、direction、loop等属性。
 </table>
