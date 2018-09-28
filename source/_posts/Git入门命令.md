@@ -1,7 +1,7 @@
 ---
 title: Git入门命令
 date: 2018-04-17 17:19:28
-tags: git入门
+tags: （G）git入门
 ---
 1、
 git init

@@ -1,7 +1,7 @@
 ---
 title: HTML常用标签及简单介绍
 date: 2018-05-09 10:57:35
-tags: html常用标签
+tags: （H）html-常用标签
 ---
 
 本文介绍内容主要分为HTML结构、标题标签、段落标签、图形标签、一些常用标签、制表、表单、框架标签、超链接标签、字符控制、列表控制以及多媒体等。
@@ -185,7 +185,8 @@ img是一个空元素，不需要结束元素,一般格式如下：
 <table>
 <tr><th>技术<th>实现方法
 <tr><td>声音与视频<td>使用a标签
-<tr><td>背景音乐<td>在head标签中写入：<br>&lt;bgsound src="" loop=""><br>（loop为循环次数）
+<tr><td>背景音乐<td>在head标签中写入：<br>&lt;bgsound src="" loop=""><br>（loop为循环次数）(IE元素，非标准)
+<tr><td>音频<td>使用audio、object、embed
 <tr><td>动态文件<td>使用img元素的dynsrc（引入各种格式的多媒体）、loop、start（值为mouseover等）等IE属性。
 <tr><td>动画和视频的插入<td>使用embed元素，用法：<br>&lt;embed src="" width="" height="">
 <tr><td>文本滚动<td>使用&lt;marquee>元素，内含width、height、bgcolor、border、behavior（=slide、sroll、alternate等）、direction、loop等属性。
