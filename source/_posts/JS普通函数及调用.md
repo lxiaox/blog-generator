@@ -46,7 +46,7 @@ tags: （JH）JS普通函数及调用
 	f4.name		//报错：f4 is not defined
 
 
-### 方法四：new
+### 方法四：使用window.Function
 
 	let f5 = new Function('x','y','return x+y')
 	f5(1,2)		//3
