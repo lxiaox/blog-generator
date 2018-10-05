@@ -1,7 +1,7 @@
 ---
 title: JS构造函数（含new做了什么）
 date: 2018-09-28 16:56:05
-tags: （JH）JS构造函数、new做了什么
+tags: （JH）JS-构造函数、new做了什么
 ---
 
 ## 一、构造函数和普通函数的区别
@@ -59,3 +59,29 @@ tags: （JH）JS构造函数、new做了什么
 		F1.constructor === Function		 //true
 
 
+## return返回情况
+
+因为new会帮我们return 临时对象，我们就不需要自己再return，但是如果硬要return，就有如下两种情况：
+
+1. `return 非 Object（String/Number/Boolean/Null/Undefined）`，仍返回新生成的（this指向的）对象；
+
+		function F(){
+			this.b = 2
+			return null	//或者return 1/undefined/"abc"
+		}
+		let f6 = new F()
+
+		console.log(f6)   //{b:2}
+
+2. `return Object`，那就返回这个Object。
+	
+		//return 对象
+			function F(){
+				this.b = 2
+				let o2 = {name:'xiao'}	//xiao不加引号错误！
+				return o2	
+			}
+			let f5 = new F()
+	
+			console.log(f5)			//{name: "xiao"}
+			console.log(f5.b)		//undefined

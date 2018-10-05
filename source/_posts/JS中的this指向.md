@@ -78,8 +78,11 @@ call把第一个参数作为this，后面的参数作为函数的参数。
 	//即
 	f4.call()
 
-## 四、构造函数: 指向构造出的实例
-一、正常情况：指向构造出的实例，这是因为new源码中就是把this指向新生成的实例。
+## 四、构造函数
+
+首先要知道：构造函数生成一个临时对象AAA，把this指向AAA。
+
+一、正常情况下，构造函数会return临时对象AAA，那么构造实例就是AAA，this也就**指向构造出的实例**，
 
 	function F(){
 		this.b = 2
@@ -89,7 +92,7 @@ call把第一个参数作为this，后面的参数作为函数的参数。
 
 二、非常情况（如果在构造函数有return）
 
-1. return 一个对象，那么构造实例就为这个对象，也就得不到正常结果，无所谓this指向了。
+1. return 一个对象 BBB，那么构造实例就为BBB，this仍指向构造函数生成的临时对象AAA，所以this**并不指向构造实例**。
 
 		//return 对象
 		function F(){
@@ -102,7 +105,7 @@ call把第一个参数作为this，后面的参数作为函数的参数。
 		console.log(f5)			//{name: "xiao"}
 		console.log(f5.b)		//undefined
 
-2. return 非对象，包括null，虽然 typeof(null) === 'object'，那么新构造的实例还是正常的。
+2. return 非对象，包括null，虽然 typeof(null) === 'object'，那么新构造的实例还是this指向的临时对象。
 
 	
 		function F(){
