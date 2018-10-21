@@ -5,7 +5,7 @@ tags: （S）排序算法-js
 ---
 不断更新中......
 
-冒泡O(n^2)，选择O(n^2)，插入O(n^2)，快速，计数，归并，桶排序，基数排序......
+冒泡O(n^2)，选择O(n^2)，插入O(n^2)，快速，计数o(n)，归并，桶排序，基数排序......
 
 ### 冒泡排序
 + 基本思想：重复走访要排序的数列，一次比较两个元素，如果这两个数顺序错误就将其交换，每次走访都能找到一个最值，重复走访直到没有要进行交换的元素，那么排序就完成了。
@@ -80,13 +80,32 @@ tags: （S）排序算法-js
 		      }
 		    }
 		  }
+		  return this
 		}
 		var num = [2,9,5,8,10,1,32]
 		num.insertionSort()
 		console.log(num)	// [1, 2, 5, 8, 9, 10, 32]
 
 
+### 计数排序
++ 基本思想：利用一个新的数组，这个数组的第i项的值就是原数组值为i的个数，然后根据新数组排序。
++ 时间复杂度：O(n+k)；空间:O(n+k)
++ JS 代码：
 
+		Array.prototype.countSort = function() {
+		  let C = []
+		  for(let i = 0; i < this.length; i++) {
+		    C[this[i]] >0 ? C[this[i]] ++ : C[this[i]] = 1
+		  }
+		  this.splice(0)
+		  for(let i = 0; i < C.length; i++) {
+		    while(C[i]-- > 0)  this.push(i)
+		    
+		  }
+		  return this
+		}
+		const arr = [2,9,5,2,4,5,0,8,9,1,3]
+		console.log(arr.countSort())
 
 
 

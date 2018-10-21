@@ -68,7 +68,7 @@ tags: （C）flex布局
 ### flex-flow: 
 是flex-direction和flex-wrap的简写
 
-`如：flex-flow: colimn wrap`
+`如：flex-flow: column wrap`
 
 ### align-content 属性
 
