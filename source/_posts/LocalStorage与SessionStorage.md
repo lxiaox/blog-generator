@@ -44,15 +44,15 @@ LocalStorage是不存储在页面中的，它存储在C盘（windows）的一个
 
 打开控制台->Application->Local Storage，可以看到：
 
-![图0](http://p8rplhkt6.bkt.clouddn.com/18-9-11/66361257.jpg)
+![图0](https://ws1.sinaimg.cn/large/d826ea31ly1fx9r4zw6osj20ki06xt8x.jpg)
 
-可以看到当前的age值为 28，为什么没有存变量名字呢？经过一番探索，我发现可以拉动下面的框，好了，key-value现出了它的庐山真面目：
+可以看到当前的age值为 27，可以拉动下面的框，出现 key-value
 
 ![图1](http://p8rplhkt6.bkt.clouddn.com/18-9-11/13943624.jpg)
 
 控制台打印：
 
-![图2](http://p8rplhkt6.bkt.clouddn.com/18-9-11/17297111.jpg)
+![图2](https://ws1.sinaimg.cn/large/d826ea31ly1fx9r2960l0j208y0490sl.jpg)
 
 ### localStorage典型应用：记录是否提示过用户
 代码如下：
@@ -64,11 +64,11 @@ LocalStorage是不存储在页面中的，它存储在C盘（windows）的一个
     }
 只有第一次进去页面会有此提示：
 
-![图5](http://p8rplhkt6.bkt.clouddn.com/18-9-11/33075996.jpg)
+![图5](https://ws1.sinaimg.cn/large/d826ea31ly1fx9r68yhbwj20cm03zt8l.jpg)
 
 点击确定会看到localStorage增加了一项 `是否提示：true` ：
 
-![图6](http://p8rplhkt6.bkt.clouddn.com/18-9-11/5605524.jpg)
+![图6](https://ws1.sinaimg.cn/large/d826ea31ly1fx9r28qtbjj20kc04waa4.jpg)
 
 
 ### localStorage接口

@@ -35,7 +35,7 @@ tags: （J）自己实现-jQuery API
 	.narrow{  width:60px; }
 此时效果为：
 
-![原始结果](http://p8rplhkt6.bkt.clouddn.com/18-7-4/94812649.jpg)
+![原始结果](https://ws1.sinaimg.cn/large/d826ea31ly1fx9rgdfautj205e05ha9u.jpg)
 
  js：
 
@@ -90,13 +90,13 @@ tags: （J）自己实现-jQuery API
 	var $div = $('div')	//传入了选择器'div',$div即返回的对象nodes
 	$div.addClass('blue')
 	//$div.addClass(['blue','high','narrow'])//添加多个类
-	$div.setText('hi') 
+	$div.setText('hi') 	//将Hello 改为 hi
 
 
 添加'blue'类的效果：
 
-![结果1](http://p8rplhkt6.bkt.clouddn.com/18-7-4/73660343.jpg)
+![结果1](https://ws1.sinaimg.cn/large/d826ea31ly1fx9rnh8o70j205o05q087.jpg)
 
 添加多个类的效果：
 
-![结果2](http://p8rplhkt6.bkt.clouddn.com/18-7-4/88773623.jpg)
+![结果2](https://ws1.sinaimg.cn/large/d826ea31ly1fx9rhoczpgj2037091742.jpg)

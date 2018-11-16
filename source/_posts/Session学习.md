@@ -16,7 +16,7 @@ Cookie过程如下：
 
 但是Cookie存在一个问题，那就是用户是可以篡改Cookie信息的。`打开控制台->Application->Cookies`，我们就可以看到Cookie，改变它的值，如果我们把id改为别的id，那就可以直接登录别人的账户，这是非常不合理的。
 
-![控制台Cookies](http://p8rplhkt6.bkt.clouddn.com/18-9-11/59114318.jpg)
+![控制台Cookies](https://ws1.sinaimg.cn/large/d826ea31ly1fx9rej3yfrj20qc07gjrr.jpg)
 
 所以我们用到另外一种技术：
 ### Session

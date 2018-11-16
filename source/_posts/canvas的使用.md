@@ -110,7 +110,7 @@ code:
 
 结果图：
 
-![对话框](http://p8rplhkt6.bkt.clouddn.com/18-9-26/124307.jpg)
+![对话框](https://i.loli.net/2018/11/16/5bee35a1dd3e6.jpg)
 
 还可以用三次贝塞尔曲线画心型等等。
 
@@ -134,7 +134,7 @@ code:
 
 结果：
 
-![path2d](http://p8rplhkt6.bkt.clouddn.com/18-9-26/97079506.jpg)
+![path2d](https://ws1.sinaimg.cn/large/d826ea31ly1fx9qj7e0ypj2066034we9.jpg)
 
 ### 5、使用SVG paths
 获取路径时以svg或canvavs方式重用：
@@ -149,7 +149,7 @@ code:
 
 结果图：
 
-![svg](http://p8rplhkt6.bkt.clouddn.com/18-9-26/13245959.jpg)
+![svg](https://ws1.sinaimg.cn/large/d826ea31ly1fx9qjgm0flj204203o741.jpg)
 
 ## 七、指定颜色
 如：
@@ -190,7 +190,7 @@ code:
 	  ctx.strokeRect(100,20, 100, 100)
 结果：
 
-![虚线](http://p8rplhkt6.bkt.clouddn.com/18-9-26/25096540.jpg)
+![虚线](https://ws1.sinaimg.cn/large/d826ea31gy1fx9qk9q99qj206904edfl.jpg)
 
 ## 九、渐变Gradient
 
@@ -226,7 +226,7 @@ code:
 
 结果图：
 
-![渐变](http://p8rplhkt6.bkt.clouddn.com/18-9-26/43135778.jpg)
+![渐变](https://ws1.sinaimg.cn/large/d826ea31gy1fx9qknvff6j208u054t8j.jpg)
 
 ## 十、添加图案 Pattern
 将image对象赋给图案，将图案作为填充样式：代码
@@ -243,7 +243,7 @@ code:
   	}
 结果：
 
-![图案](http://p8rplhkt6.bkt.clouddn.com/18-9-26/83555573.jpg)
+![图案](https://ws1.sinaimg.cn/large/d826ea31ly1fx9qjh5fiqj20a40a7whm.jpg)
 
 ## 十一、阴影shadows
 1. shadowOffsetX = float

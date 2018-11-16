@@ -6,7 +6,7 @@ tags: （J）Promise
 # 什么是 Promise？
 Promise作为ES6最重要的特性之一，它本身是一个构造函数，并拥有`resolve`、 `reject`、 `all`、 `race` 等方法。
 
-![打印Promise](http://p8rplhkt6.bkt.clouddn.com/18-9-8/100325.jpg)
+![打印Promise](https://ws1.sinaimg.cn/large/d826ea31gy1fx9r9ru3ttj20lf06wq3e.jpg)
 
 ##### Promise 对象用于表示一个异步操作的最终状态（完成或失败），以及其返回的值。
 
@@ -95,7 +95,7 @@ Promise构造函数接受一个函数，这个函数的参数为`resolve`和`rej
 		})
 成功结果截图，3s之后输出：
 
-![成功结果](http://p8rplhkt6.bkt.clouddn.com/18-9-8/35816019.jpg)
+![成功结果](https://ws1.sinaimg.cn/large/d826ea31gy1fx9rak3q9zj20ao055glo.jpg)
 
 		//失败的情况：
 		test(55).then(function(value){
@@ -107,7 +107,7 @@ Promise构造函数接受一个函数，这个函数的参数为`resolve`和`rej
 		})
 失败结果截图，3s之后输出：
 
-![失败结果](http://p8rplhkt6.bkt.clouddn.com/18-9-8/48159739.jpg)
+![失败结果](https://ws1.sinaimg.cn/large/d826ea31gy1fx9rbg8axej2099056mx7.jpg)
 
 # 更多用法
 
@@ -116,30 +116,30 @@ Promise构造函数接受一个函数，这个函数的参数为`resolve`和`rej
 
 1、如果传入的值本身是一个Promise对象，那么就返回这个Promise对象
 
-![传入Promise对象](http://p8rplhkt6.bkt.clouddn.com/18-9-8/58265184.jpg)
+![传入Promise对象](https://ws1.sinaimg.cn/large/d826ea31gy1fx9rbtn88vj209704xglm.jpg)
 
 如图传入Promise对象为：test(55)，它的状态是失败，resolve()的返回值就是这个失败状态的promise，因此会调用失败的回调输出failed。
 
 2、如果传入的值是个thenable对象，即带有then方法，那么返回的是then之后最终状态的promise。
 
-![传入thenable](http://p8rplhkt6.bkt.clouddn.com/18-9-8/84989719.jpg)
+![传入thenable](https://ws1.sinaimg.cn/large/d826ea31gy1fx9rcfj5n0j20cm08faac.jpg)
 
 如图传入`test(55).then().catch()`，虽然`test(55)`是失败的，但是它经过`catch()`处理，最后返回的状态是成功，所以`resolve()`最后的`then()`会输出`success`。
 
 3、如果传入的是其他值，那么就以成功状态返回Promise。
 
-![传入其他值](http://p8rplhkt6.bkt.clouddn.com/18-9-8/24130485.jpg)
+![传入其他值](https://ws1.sinaimg.cn/large/d826ea31ly1fx9rcpxasij209l05f0ss.jpg)
 
 如图传入`‘abcde’`，最终状态是成功，输出`success`。
 
 ### 2、Promise.reject(reason)
 `reject()`方法返回一个带有拒绝原因参数的Promise对象。
 
-![reject1](http://p8rplhkt6.bkt.clouddn.com/18-9-8/43684756.jpg)
+![reject1](https://ws1.sinaimg.cn/large/d826ea31ly1fx9rcyvui3j209s04kq2y.jpg)
 
 从上图可以看出这里的拒绝原因就是字符串‘abcde’本身。
 
-![reject2](http://p8rplhkt6.bkt.clouddn.com/18-9-8/47409228.jpg)
+![reject2](https://ws1.sinaimg.cn/large/d826ea31ly1fx9rdega12j20bf04twek.jpg)
 
 这里的原因是Error: failed。
 

@@ -59,7 +59,7 @@ HTTP响应信息包括以下几点:
 5. 查看 Response Headers，点击 view source 即可看到上述**响应**信息；
 6. 如果有第4部分，那么在 FormData 或 Payload 里面可以看到。
 
-{% asset_img eg.png eg %}
+![](https://ws1.sinaimg.cn/large/d826ea31ly1fx9qrrros5j20n20bkq6j.jpg)	
  
  
 ## 5.使用curl命令发起请求
